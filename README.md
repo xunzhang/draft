@@ -16,14 +16,14 @@ Calcute the highest number of occurrences of k words in input dataset.
   Default parameters are set in a JSON format file. For example, we create a
   cfg.json as below(modify `your_paracel_install_path`):
 
-{  
+`{  
   "input" : "data.txt",  
   "output" : "./wc_output/",  
   "topk" : 10,  
   "handle_file" : "your_paracel_install_path/lib/libwc_update.so",  
   "update_function" : "wc_updater",  
   "filter_function" : "wc_filter"  
-}  
+}`  
 
 In the configuration file, `handle_file`, `update_function` and `filter_function` is the information of the registry function needed in word count program.
 
