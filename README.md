@@ -25,9 +25,8 @@ Calcute the highest number of occurrences of k words in input dataset.
   "update_function" : "wc_updater",
   "filter_function" : "wc_filter"
 }```
-In the configuration file, `handle_file`, `update_function` and
-`filter_function` is the information of the registry function needed in word
-count program.
+
+In the configuration file, `handle_file`, `update_function` and `filter_function` is the information of the registry function needed in word count program.
 
 # Data Format
 Free-format text.
