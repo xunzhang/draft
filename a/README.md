@@ -13,6 +13,8 @@ The KMeans algorithm clusters data by trying to separate samples in n groups of 
 ```./prun.py -w 4 -p 1 -c ./alg/clustering/kmeans/cfg.json -m local ./local/bin/kmeans```
 
 # Parameters
+Default parameters are set in a JSON format file. For example, we create a cfg.json as below(modify `your_pa   racel_install_path`):  
+
 {  
     "input" : "data.csv",  
     "output" : "./kmeans_result/",  
@@ -24,19 +26,6 @@ The KMeans algorithm clusters data by trying to separate samples in n groups of 
 }  
 In the configuration file, `kclusters` refers to the number of clusters you want to separate. `update_file`, `update_functions` is the information of the registry function needed in kmeans algorithm. `rounds` refers to the number of training iterations.
 
-<<<<<<< HEAD
-=======
-{    
-    "input" : "data.txt",    
-    "output" : "./wc_output/",    
-    "topk" : 10,    
-    "handle_file" : "your_paracel_install_path/lib/libwc_update.so",   
-    "update_function" : "wc_updater",   
-    "filter_function" : "wc_filter"   
-}
-
-In the configuration file, `handle_file`, `update_function` and `filter_function` is the information of the registry function needed in word count program.
->>>>>>> 3fde1bb66581a3301582596af08e6c6d717e1c12
 
 # Data Format
 ## Input
